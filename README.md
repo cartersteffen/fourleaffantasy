@@ -9,7 +9,6 @@
 # genius-gamblers
 <br />
 <p align="center">
-  <img src="logo.jpeg" alt="Logo" width="80" height="80">
   <p align="center">
     One to two paragraph statement about your product and what it does.
   </p>
