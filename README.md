@@ -38,7 +38,7 @@ We would love you for the contribution to **Genius Gamblers**, check the ``LICEN
 
 ## Meta
 
-Your Name – [@Cartsteffen](https://twitter.com/Cartsteffen) – YourEmail@example.com
+Your Name – [@Cartsteffen](https://twitter.com/Cartsteffen) – cartste3@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
