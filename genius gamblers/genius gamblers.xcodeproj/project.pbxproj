@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD3898452B76C591007625B9 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898442B76C591007625B9 /* AppScreen.swift */; };
+		AD3898472B76C68A007625B9 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898462B76C68A007625B9 /* AppTabView.swift */; };
+		AD38984A2B867A4D007625B9 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AD3898492B867A4D007625B9 /* GoogleSignIn */; };
+		AD38984C2B867A4D007625B9 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD38984B2B867A4D007625B9 /* GoogleSignInSwift */; };
+		AD38984E2B867B2B007625B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD38984D2B867B2B007625B9 /* GoogleService-Info.plist */; };
+		AD3898532B868559007625B9 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898522B868559007625B9 /* LeaderboardView.swift */; };
+		AD3898562B8685A8007625B9 /* PicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898552B8685A8007625B9 /* PicksView.swift */; };
+		AD3898582B8685CB007625B9 /* MatchupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898572B8685CB007625B9 /* MatchupsView.swift */; };
+		AD38985A2B86A747007625B9 /* LeaderboardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3898592B86A747007625B9 /* LeaderboardRowView.swift */; };
+		AD38985D2B871B73007625B9 /* MatchupsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38985C2B871B73007625B9 /* MatchupsRowView.swift */; };
+		AD38985F2B871EAC007625B9 /* PicksRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38985E2B871EAC007625B9 /* PicksRowView.swift */; };
+		AD5C653A2B7562E50055C143 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65392B7562E50055C143 /* LoginView.swift */; };
+		AD5C653B2B7562E50055C143 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65392B7562E50055C143 /* LoginView.swift */; };
+		AD5C653C2B7562E50055C143 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65392B7562E50055C143 /* LoginView.swift */; };
+		AD5C653E2B756FBF0055C143 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C653D2B756FBF0055C143 /* InputView.swift */; };
+		AD5C653F2B756FBF0055C143 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C653D2B756FBF0055C143 /* InputView.swift */; };
+		AD5C65402B756FBF0055C143 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C653D2B756FBF0055C143 /* InputView.swift */; };
+		AD5C65422B758ECE0055C143 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65412B758ECE0055C143 /* RegistrationView.swift */; };
+		AD5C65432B758ECE0055C143 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65412B758ECE0055C143 /* RegistrationView.swift */; };
+		AD5C65442B758ECE0055C143 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65412B758ECE0055C143 /* RegistrationView.swift */; };
+		AD5C65462B75913E0055C143 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65452B75913E0055C143 /* ProfileView.swift */; };
+		AD5C65472B75913E0055C143 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65452B75913E0055C143 /* ProfileView.swift */; };
+		AD5C65482B75913E0055C143 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65452B75913E0055C143 /* ProfileView.swift */; };
+		AD5C654A2B7592F90055C143 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65492B7592F90055C143 /* SettingsRowView.swift */; };
+		AD5C654B2B7592F90055C143 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65492B7592F90055C143 /* SettingsRowView.swift */; };
+		AD5C654C2B7592F90055C143 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65492B7592F90055C143 /* SettingsRowView.swift */; };
+		AD5C654E2B7594CB0055C143 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C654D2B7594CB0055C143 /* User.swift */; };
+		AD5C654F2B7594CB0055C143 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C654D2B7594CB0055C143 /* User.swift */; };
+		AD5C65502B7594CB0055C143 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C654D2B7594CB0055C143 /* User.swift */; };
+		AD5C65532B759D8F0055C143 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C65522B759D8F0055C143 /* FirebaseAnalytics */; };
+		AD5C65552B759D8F0055C143 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C65542B759D8F0055C143 /* FirebaseAuth */; };
+		AD5C65572B759D8F0055C143 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C65562B759D8F0055C143 /* FirebaseCrashlytics */; };
+		AD5C65592B759D8F0055C143 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C65582B759D8F0055C143 /* FirebaseFirestore */; };
+		AD5C655B2B759D8F0055C143 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C655A2B759D8F0055C143 /* FirebaseFirestoreSwift */; };
+		AD5C655D2B759D8F0055C143 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C655C2B759D8F0055C143 /* FirebaseStorage */; };
+		AD5C65612B759E3C0055C143 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65602B759E3C0055C143 /* AuthViewModel.swift */; };
+		AD5C65622B759E3C0055C143 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65602B759E3C0055C143 /* AuthViewModel.swift */; };
+		AD5C65632B759E3C0055C143 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5C65602B759E3C0055C143 /* AuthViewModel.swift */; };
+		AD8BE0BC2B5AF26F00299316 /* genius_gamblersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0BB2B5AF26F00299316 /* genius_gamblersApp.swift */; };
+		AD8BE0BE2B5AF26F00299316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0BD2B5AF26F00299316 /* ContentView.swift */; };
+		AD8BE0C02B5AF26F00299316 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0BF2B5AF26F00299316 /* Item.swift */; };
+		AD8BE0C22B5AF27000299316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8BE0C12B5AF27000299316 /* Assets.xcassets */; };
+		AD8BE0C52B5AF27000299316 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8BE0C42B5AF27000299316 /* Preview Assets.xcassets */; };
+		AD8BE0CF2B5AF27000299316 /* genius_gamblersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0CE2B5AF27000299316 /* genius_gamblersTests.swift */; };
+		AD8BE0D92B5AF27000299316 /* genius_gamblersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0D82B5AF27000299316 /* genius_gamblersUITests.swift */; };
+		AD8BE0DB2B5AF27000299316 /* genius_gamblersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8BE0DA2B5AF27000299316 /* genius_gamblersUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD8BE0CB2B5AF27000299316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD8BE0B02B5AF26F00299316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD8BE0B72B5AF26F00299316;
+			remoteInfo = "genius gamblers";
+		};
+		AD8BE0D52B5AF27000299316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD8BE0B02B5AF26F00299316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD8BE0B72B5AF26F00299316;
+			remoteInfo = "genius gamblers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD3898442B76C591007625B9 /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		AD3898462B76C68A007625B9 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		AD38984D2B867B2B007625B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD3898522B868559007625B9 /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		AD3898552B8685A8007625B9 /* PicksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PicksView.swift; path = "genius gamblers/Core/Leaderboard/PicksView.swift"; sourceTree = SOURCE_ROOT; };
+		AD3898572B8685CB007625B9 /* MatchupsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchupsView.swift; path = "genius gamblers/Core/Leaderboard/MatchupsView.swift"; sourceTree = SOURCE_ROOT; };
+		AD3898592B86A747007625B9 /* LeaderboardRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardRowView.swift; sourceTree = "<group>"; };
+		AD38985B2B8714A0007625B9 /* genius-gamblers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "genius-gamblers-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AD38985C2B871B73007625B9 /* MatchupsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchupsRowView.swift; sourceTree = "<group>"; };
+		AD38985E2B871EAC007625B9 /* PicksRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksRowView.swift; sourceTree = "<group>"; };
+		AD5C65392B7562E50055C143 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD5C653D2B756FBF0055C143 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		AD5C65412B758ECE0055C143 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		AD5C65452B75913E0055C143 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AD5C65492B7592F90055C143 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		AD5C654D2B7594CB0055C143 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD5C65602B759E3C0055C143 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AD8BE0B82B5AF26F00299316 /* genius gamblers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "genius gamblers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BE0BB2B5AF26F00299316 /* genius_gamblersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genius_gamblersApp.swift; sourceTree = "<group>"; };
+		AD8BE0BD2B5AF26F00299316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD8BE0BF2B5AF26F00299316 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AD8BE0C12B5AF27000299316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD8BE0C42B5AF27000299316 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD8BE0CA2B5AF27000299316 /* genius gamblersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "genius gamblersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BE0CE2B5AF27000299316 /* genius_gamblersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genius_gamblersTests.swift; sourceTree = "<group>"; };
+		AD8BE0D42B5AF27000299316 /* genius gamblersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "genius gamblersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8BE0D82B5AF27000299316 /* genius_gamblersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genius_gamblersUITests.swift; sourceTree = "<group>"; };
+		AD8BE0DA2B5AF27000299316 /* genius_gamblersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genius_gamblersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD8BE0B52B5AF26F00299316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5C655B2B759D8F0055C143 /* FirebaseFirestoreSwift in Frameworks */,
+				AD5C65572B759D8F0055C143 /* FirebaseCrashlytics in Frameworks */,
+				AD5C65592B759D8F0055C143 /* FirebaseFirestore in Frameworks */,
+				AD38984C2B867A4D007625B9 /* GoogleSignInSwift in Frameworks */,
+				AD5C65532B759D8F0055C143 /* FirebaseAnalytics in Frameworks */,
+				AD5C65552B759D8F0055C143 /* FirebaseAuth in Frameworks */,
+				AD5C655D2B759D8F0055C143 /* FirebaseStorage in Frameworks */,
+				AD38984A2B867A4D007625B9 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0C72B5AF27000299316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0D12B5AF27000299316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD3898432B76C553007625B9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AD3898442B76C591007625B9 /* AppScreen.swift */,
+				AD3898462B76C68A007625B9 /* AppTabView.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		AD38984F2B868527007625B9 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				AD3898522B868559007625B9 /* LeaderboardView.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		AD3898542B868585007625B9 /* Picks */ = {
+			isa = PBXGroup;
+			children = (
+				AD3898552B8685A8007625B9 /* PicksView.swift */,
+				AD3898572B8685CB007625B9 /* MatchupsView.swift */,
+			);
+			path = Picks;
+			sourceTree = "<group>";
+		};
+		AD5C655E2B759DC80055C143 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C65392B7562E50055C143 /* LoginView.swift */,
+				AD5C65412B758ECE0055C143 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5C655F2B759DD50055C143 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C65602B759E3C0055C143 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD8BE0AF2B5AF26F00299316 = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0BA2B5AF26F00299316 /* genius gamblers */,
+				AD8BE0CD2B5AF27000299316 /* genius gamblersTests */,
+				AD8BE0D72B5AF27000299316 /* genius gamblersUITests */,
+				AD8BE0B92B5AF26F00299316 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD8BE0B92B5AF26F00299316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0B82B5AF26F00299316 /* genius gamblers.app */,
+				AD8BE0CA2B5AF27000299316 /* genius gamblersTests.xctest */,
+				AD8BE0D42B5AF27000299316 /* genius gamblersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8BE0BA2B5AF26F00299316 /* genius gamblers */ = {
+			isa = PBXGroup;
+			children = (
+				AD38985B2B8714A0007625B9 /* genius-gamblers-Info.plist */,
+				AD38984D2B867B2B007625B9 /* GoogleService-Info.plist */,
+				AD8BE0E72B5AF2AE00299316 /* App */,
+				AD8BE0E82B5AF2CA00299316 /* Components */,
+				AD8BE0EB2B5AF30300299316 /* Core */,
+				AD8BE0EA2B5AF2E300299316 /* Model */,
+				AD3898432B76C553007625B9 /* Navigation */,
+				AD8BE0C12B5AF27000299316 /* Assets.xcassets */,
+				AD8BE0C32B5AF27000299316 /* Preview Content */,
+			);
+			path = "genius gamblers";
+			sourceTree = "<group>";
+		};
+		AD8BE0C32B5AF27000299316 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0C42B5AF27000299316 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD8BE0CD2B5AF27000299316 /* genius gamblersTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0CE2B5AF27000299316 /* genius_gamblersTests.swift */,
+			);
+			path = "genius gamblersTests";
+			sourceTree = "<group>";
+		};
+		AD8BE0D72B5AF27000299316 /* genius gamblersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0D82B5AF27000299316 /* genius_gamblersUITests.swift */,
+				AD8BE0DA2B5AF27000299316 /* genius_gamblersUITestsLaunchTests.swift */,
+			);
+			path = "genius gamblersUITests";
+			sourceTree = "<group>";
+		};
+		AD8BE0E72B5AF2AE00299316 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0BB2B5AF26F00299316 /* genius_gamblersApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AD8BE0E82B5AF2CA00299316 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C653D2B756FBF0055C143 /* InputView.swift */,
+				AD5C65492B7592F90055C143 /* SettingsRowView.swift */,
+				AD3898592B86A747007625B9 /* LeaderboardRowView.swift */,
+				AD38985E2B871EAC007625B9 /* PicksRowView.swift */,
+				AD38985C2B871B73007625B9 /* MatchupsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD8BE0EA2B5AF2E300299316 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0BF2B5AF26F00299316 /* Item.swift */,
+				AD5C654D2B7594CB0055C143 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD8BE0EB2B5AF30300299316 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD3898542B868585007625B9 /* Picks */,
+				AD38984F2B868527007625B9 /* Leaderboard */,
+				AD8BE0EC2B5AF33600299316 /* Authentication */,
+				AD8BE0ED2B5AF34600299316 /* Profile */,
+				AD8BE0EE2B5AF34F00299316 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AD8BE0EC2B5AF33600299316 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C655E2B759DC80055C143 /* View */,
+				AD5C655F2B759DD50055C143 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AD8BE0ED2B5AF34600299316 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C65452B75913E0055C143 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AD8BE0EE2B5AF34F00299316 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AD8BE0BD2B5AF26F00299316 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD8BE0B72B5AF26F00299316 /* genius gamblers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8BE0DE2B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblers" */;
+			buildPhases = (
+				AD8BE0B42B5AF26F00299316 /* Sources */,
+				AD8BE0B52B5AF26F00299316 /* Frameworks */,
+				AD8BE0B62B5AF26F00299316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "genius gamblers";
+			packageProductDependencies = (
+				AD5C65522B759D8F0055C143 /* FirebaseAnalytics */,
+				AD5C65542B759D8F0055C143 /* FirebaseAuth */,
+				AD5C65562B759D8F0055C143 /* FirebaseCrashlytics */,
+				AD5C65582B759D8F0055C143 /* FirebaseFirestore */,
+				AD5C655A2B759D8F0055C143 /* FirebaseFirestoreSwift */,
+				AD5C655C2B759D8F0055C143 /* FirebaseStorage */,
+				AD3898492B867A4D007625B9 /* GoogleSignIn */,
+				AD38984B2B867A4D007625B9 /* GoogleSignInSwift */,
+			);
+			productName = "genius gamblers";
+			productReference = AD8BE0B82B5AF26F00299316 /* genius gamblers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD8BE0C92B5AF27000299316 /* genius gamblersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8BE0E12B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblersTests" */;
+			buildPhases = (
+				AD8BE0C62B5AF27000299316 /* Sources */,
+				AD8BE0C72B5AF27000299316 /* Frameworks */,
+				AD8BE0C82B5AF27000299316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8BE0CC2B5AF27000299316 /* PBXTargetDependency */,
+			);
+			name = "genius gamblersTests";
+			productName = "genius gamblersTests";
+			productReference = AD8BE0CA2B5AF27000299316 /* genius gamblersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD8BE0D32B5AF27000299316 /* genius gamblersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8BE0E42B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblersUITests" */;
+			buildPhases = (
+				AD8BE0D02B5AF27000299316 /* Sources */,
+				AD8BE0D12B5AF27000299316 /* Frameworks */,
+				AD8BE0D22B5AF27000299316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD8BE0D62B5AF27000299316 /* PBXTargetDependency */,
+			);
+			name = "genius gamblersUITests";
+			productName = "genius gamblersUITests";
+			productReference = AD8BE0D42B5AF27000299316 /* genius gamblersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD8BE0B02B5AF26F00299316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					AD8BE0B72B5AF26F00299316 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					AD8BE0C92B5AF27000299316 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AD8BE0B72B5AF26F00299316;
+					};
+					AD8BE0D32B5AF27000299316 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = AD8BE0B72B5AF26F00299316;
+					};
+				};
+			};
+			buildConfigurationList = AD8BE0B32B5AF26F00299316 /* Build configuration list for PBXProject "genius gamblers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD8BE0AF2B5AF26F00299316;
+			packageReferences = (
+				AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AD3898482B867A4D007625B9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = AD8BE0B92B5AF26F00299316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD8BE0B72B5AF26F00299316 /* genius gamblers */,
+				AD8BE0C92B5AF27000299316 /* genius gamblersTests */,
+				AD8BE0D32B5AF27000299316 /* genius gamblersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD8BE0B62B5AF26F00299316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8BE0C52B5AF27000299316 /* Preview Assets.xcassets in Resources */,
+				AD8BE0C22B5AF27000299316 /* Assets.xcassets in Resources */,
+				AD38984E2B867B2B007625B9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0C82B5AF27000299316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0D22B5AF27000299316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD8BE0B42B5AF26F00299316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5C65612B759E3C0055C143 /* AuthViewModel.swift in Sources */,
+				AD8BE0BE2B5AF26F00299316 /* ContentView.swift in Sources */,
+				AD8BE0C02B5AF26F00299316 /* Item.swift in Sources */,
+				AD5C653E2B756FBF0055C143 /* InputView.swift in Sources */,
+				AD3898562B8685A8007625B9 /* PicksView.swift in Sources */,
+				AD3898452B76C591007625B9 /* AppScreen.swift in Sources */,
+				AD5C65422B758ECE0055C143 /* RegistrationView.swift in Sources */,
+				AD5C654A2B7592F90055C143 /* SettingsRowView.swift in Sources */,
+				AD5C654E2B7594CB0055C143 /* User.swift in Sources */,
+				AD5C653A2B7562E50055C143 /* LoginView.swift in Sources */,
+				AD5C65462B75913E0055C143 /* ProfileView.swift in Sources */,
+				AD38985A2B86A747007625B9 /* LeaderboardRowView.swift in Sources */,
+				AD3898582B8685CB007625B9 /* MatchupsView.swift in Sources */,
+				AD3898472B76C68A007625B9 /* AppTabView.swift in Sources */,
+				AD38985D2B871B73007625B9 /* MatchupsRowView.swift in Sources */,
+				AD8BE0BC2B5AF26F00299316 /* genius_gamblersApp.swift in Sources */,
+				AD38985F2B871EAC007625B9 /* PicksRowView.swift in Sources */,
+				AD3898532B868559007625B9 /* LeaderboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0C62B5AF27000299316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5C653F2B756FBF0055C143 /* InputView.swift in Sources */,
+				AD5C653B2B7562E50055C143 /* LoginView.swift in Sources */,
+				AD5C654B2B7592F90055C143 /* SettingsRowView.swift in Sources */,
+				AD5C65472B75913E0055C143 /* ProfileView.swift in Sources */,
+				AD5C65622B759E3C0055C143 /* AuthViewModel.swift in Sources */,
+				AD8BE0CF2B5AF27000299316 /* genius_gamblersTests.swift in Sources */,
+				AD5C65432B758ECE0055C143 /* RegistrationView.swift in Sources */,
+				AD5C654F2B7594CB0055C143 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8BE0D02B5AF27000299316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5C653C2B7562E50055C143 /* LoginView.swift in Sources */,
+				AD5C65402B756FBF0055C143 /* InputView.swift in Sources */,
+				AD8BE0DB2B5AF27000299316 /* genius_gamblersUITestsLaunchTests.swift in Sources */,
+				AD8BE0D92B5AF27000299316 /* genius_gamblersUITests.swift in Sources */,
+				AD5C65502B7594CB0055C143 /* User.swift in Sources */,
+				AD5C65482B75913E0055C143 /* ProfileView.swift in Sources */,
+				AD5C65442B758ECE0055C143 /* RegistrationView.swift in Sources */,
+				AD5C654C2B7592F90055C143 /* SettingsRowView.swift in Sources */,
+				AD5C65632B759E3C0055C143 /* AuthViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD8BE0CC2B5AF27000299316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8BE0B72B5AF26F00299316 /* genius gamblers */;
+			targetProxy = AD8BE0CB2B5AF27000299316 /* PBXContainerItemProxy */;
+		};
+		AD8BE0D62B5AF27000299316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD8BE0B72B5AF26F00299316 /* genius gamblers */;
+			targetProxy = AD8BE0D52B5AF27000299316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD8BE0DC2B5AF27000299316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD8BE0DD2B5AF27000299316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD8BE0DF2B5AF27000299316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"genius gamblers/Preview Content\"";
+				DEVELOPMENT_TEAM = JX224652A5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "genius-gamblers-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD8BE0E02B5AF27000299316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"genius gamblers/Preview Content\"";
+				DEVELOPMENT_TEAM = JX224652A5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "genius-gamblers-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD8BE0E22B5AF27000299316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genius gamblers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/genius gamblers";
+			};
+			name = Debug;
+		};
+		AD8BE0E32B5AF27000299316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/genius gamblers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/genius gamblers";
+			};
+			name = Release;
+		};
+		AD8BE0E52B5AF27000299316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "genius gamblers";
+			};
+			name = Debug;
+		};
+		AD8BE0E62B5AF27000299316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cartersteffen.genius-gamblersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "genius gamblers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8BE0B32B5AF26F00299316 /* Build configuration list for PBXProject "genius gamblers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8BE0DC2B5AF27000299316 /* Debug */,
+				AD8BE0DD2B5AF27000299316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8BE0DE2B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8BE0DF2B5AF27000299316 /* Debug */,
+				AD8BE0E02B5AF27000299316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8BE0E12B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8BE0E22B5AF27000299316 /* Debug */,
+				AD8BE0E32B5AF27000299316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8BE0E42B5AF27000299316 /* Build configuration list for PBXNativeTarget "genius gamblersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD8BE0E52B5AF27000299316 /* Debug */,
+				AD8BE0E62B5AF27000299316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD3898482B867A4D007625B9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD3898492B867A4D007625B9 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD3898482B867A4D007625B9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		AD38984B2B867A4D007625B9 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD3898482B867A4D007625B9 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		AD5C65522B759D8F0055C143 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AD5C65542B759D8F0055C143 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD5C65562B759D8F0055C143 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		AD5C65582B759D8F0055C143 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD5C655A2B759D8F0055C143 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		AD5C655C2B759D8F0055C143 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD5C65512B759D8F0055C143 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD8BE0B02B5AF26F00299316 /* Project object */;
+}
