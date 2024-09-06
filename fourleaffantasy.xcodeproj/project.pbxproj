@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD57D64C2B9FEA3400AB54A7 /* fourleaffantasyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D64B2B9FEA3400AB54A7 /* fourleaffantasyApp.swift */; };
+		AD57D6502B9FEA3500AB54A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD57D64F2B9FEA3500AB54A7 /* Assets.xcassets */; };
+		AD57D6532B9FEA3500AB54A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD57D6522B9FEA3500AB54A7 /* Preview Assets.xcassets */; };
+		AD57D65D2B9FEA3500AB54A7 /* fourleaffantasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D65C2B9FEA3500AB54A7 /* fourleaffantasyTests.swift */; };
+		AD57D6672B9FEA3500AB54A7 /* fourleaffantasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6662B9FEA3500AB54A7 /* fourleaffantasyUITests.swift */; };
+		AD57D6692B9FEA3500AB54A7 /* fourleaffantasyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6682B9FEA3500AB54A7 /* fourleaffantasyUITestsLaunchTests.swift */; };
+		AD57D6772BA0113D00AB54A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD57D6762BA0113D00AB54A7 /* FirebaseAuth */; };
+		AD57D6792BA0113D00AB54A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD57D6782BA0113D00AB54A7 /* FirebaseFirestore */; };
+		AD57D67B2BA0113D00AB54A7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD57D67A2BA0113D00AB54A7 /* FirebaseFirestoreSwift */; };
+		AD57D67D2BA011DC00AB54A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD57D67C2BA011DC00AB54A7 /* GoogleService-Info.plist */; };
+		AD57D6982BA011F700AB54A7 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6832BA011F700AB54A7 /* InputView.swift */; };
+		AD57D6992BA011F700AB54A7 /* LeaderboardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6842BA011F700AB54A7 /* LeaderboardRowView.swift */; };
+		AD57D69A2BA011F700AB54A7 /* MatchupsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6852BA011F700AB54A7 /* MatchupsRowView.swift */; };
+		AD57D69B2BA011F700AB54A7 /* PicksRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6862BA011F700AB54A7 /* PicksRowView.swift */; };
+		AD57D69C2BA011F700AB54A7 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6872BA011F700AB54A7 /* SettingsRowView.swift */; };
+		AD57D6A62BA0120C00AB54A7 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6A52BA0120C00AB54A7 /* AppTabView.swift */; };
+		AD57D6A82BA0121600AB54A7 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6A72BA0121600AB54A7 /* AppScreen.swift */; };
+		AD57D6C42BA013E100AB54A7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6A92BA013E100AB54A7 /* LoginView.swift */; };
+		AD57D6C52BA013E100AB54A7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6AA2BA013E100AB54A7 /* RegistrationView.swift */; };
+		AD57D6C62BA013E100AB54A7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6AC2BA013E100AB54A7 /* AuthViewModel.swift */; };
+		AD57D6C72BA013E100AB54A7 /* MatchupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6AD2BA013E100AB54A7 /* MatchupsViewModel.swift */; };
+		AD57D6C82BA013E100AB54A7 /* SheetView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6AE2BA013E100AB54A7 /* SheetView-ViewModel.swift */; };
+		AD57D6C92BA013E100AB54A7 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6B12BA013E100AB54A7 /* LeaderboardView.swift */; };
+		AD57D6CA2BA013E100AB54A7 /* PicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6B22BA013E100AB54A7 /* PicksView.swift */; };
+		AD57D6CB2BA013E100AB54A7 /* MatchupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6B42BA013E100AB54A7 /* MatchupsView.swift */; };
+		AD57D6CC2BA013E100AB54A7 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6B62BA013E100AB54A7 /* SheetView.swift */; };
+		AD57D6CD2BA013E100AB54A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6B82BA013E100AB54A7 /* ProfileView.swift */; };
+		AD57D6CE2BA013E100AB54A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6BA2BA013E100AB54A7 /* ContentView.swift */; };
+		AD57D6CF2BA013E100AB54A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6BD2BA013E100AB54A7 /* Constants.swift */; };
+		AD57D6D02BA013E100AB54A7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6BE2BA013E100AB54A7 /* Item.swift */; };
+		AD57D6D12BA013E100AB54A7 /* Matchups.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6BF2BA013E100AB54A7 /* Matchups.swift */; };
+		AD57D6D22BA013E100AB54A7 /* Picks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6C02BA013E100AB54A7 /* Picks.swift */; };
+		AD57D6D32BA013E100AB54A7 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6C12BA013E100AB54A7 /* Scores.swift */; };
+		AD57D6D42BA013E100AB54A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6C22BA013E100AB54A7 /* User.swift */; };
+		AD57D6D72BA7998A00AB54A7 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD57D6D62BA7998A00AB54A7 /* TimeUtils.swift */; };
+		AD9BDFF42C8B60A300AC4B9C /* LogoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BDFF32C8B60A300AC4B9C /* LogoUtils.swift */; };
+		AD9BDFF62C8B99C600AC4B9C /* MatchupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BDFF52C8B99C600AC4B9C /* MatchupRow.swift */; };
+		ADFE7A3C2C52F21C005BF599 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = ADFE7A3B2C52F21C005BF599 /* Apollo */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD57D6592B9FEA3500AB54A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD57D6402B9FEA3400AB54A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD57D6472B9FEA3400AB54A7;
+			remoteInfo = fourleaffantasy;
+		};
+		AD57D6632B9FEA3500AB54A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD57D6402B9FEA3400AB54A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD57D6472B9FEA3400AB54A7;
+			remoteInfo = fourleaffantasy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD57D6482B9FEA3400AB54A7 /* fourleaffantasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fourleaffantasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD57D64B2B9FEA3400AB54A7 /* fourleaffantasyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourleaffantasyApp.swift; sourceTree = "<group>"; };
+		AD57D64F2B9FEA3500AB54A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD57D6522B9FEA3500AB54A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD57D6582B9FEA3500AB54A7 /* fourleaffantasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourleaffantasyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD57D65C2B9FEA3500AB54A7 /* fourleaffantasyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourleaffantasyTests.swift; sourceTree = "<group>"; };
+		AD57D6622B9FEA3500AB54A7 /* fourleaffantasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourleaffantasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD57D6662B9FEA3500AB54A7 /* fourleaffantasyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourleaffantasyUITests.swift; sourceTree = "<group>"; };
+		AD57D6682B9FEA3500AB54A7 /* fourleaffantasyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourleaffantasyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD57D67C2BA011DC00AB54A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD57D6832BA011F700AB54A7 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		AD57D6842BA011F700AB54A7 /* LeaderboardRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardRowView.swift; sourceTree = "<group>"; };
+		AD57D6852BA011F700AB54A7 /* MatchupsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchupsRowView.swift; sourceTree = "<group>"; };
+		AD57D6862BA011F700AB54A7 /* PicksRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksRowView.swift; sourceTree = "<group>"; };
+		AD57D6872BA011F700AB54A7 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		AD57D6A52BA0120C00AB54A7 /* AppTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		AD57D6A72BA0121600AB54A7 /* AppScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		AD57D6A92BA013E100AB54A7 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD57D6AA2BA013E100AB54A7 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		AD57D6AC2BA013E100AB54A7 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AD57D6AD2BA013E100AB54A7 /* MatchupsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchupsViewModel.swift; sourceTree = "<group>"; };
+		AD57D6AE2BA013E100AB54A7 /* SheetView-ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SheetView-ViewModel.swift"; sourceTree = "<group>"; };
+		AD57D6B12BA013E100AB54A7 /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		AD57D6B22BA013E100AB54A7 /* PicksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicksView.swift; sourceTree = "<group>"; };
+		AD57D6B42BA013E100AB54A7 /* MatchupsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchupsView.swift; sourceTree = "<group>"; };
+		AD57D6B62BA013E100AB54A7 /* SheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		AD57D6B82BA013E100AB54A7 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AD57D6BA2BA013E100AB54A7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD57D6BD2BA013E100AB54A7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD57D6BE2BA013E100AB54A7 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AD57D6BF2BA013E100AB54A7 /* Matchups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matchups.swift; sourceTree = "<group>"; };
+		AD57D6C02BA013E100AB54A7 /* Picks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picks.swift; sourceTree = "<group>"; };
+		AD57D6C12BA013E100AB54A7 /* Scores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		AD57D6C22BA013E100AB54A7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD57D6D62BA7998A00AB54A7 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		AD9BDFF32C8B60A300AC4B9C /* LogoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoUtils.swift; sourceTree = "<group>"; };
+		AD9BDFF52C8B99C600AC4B9C /* MatchupRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchupRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD57D6452B9FEA3400AB54A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57D6772BA0113D00AB54A7 /* FirebaseAuth in Frameworks */,
+				ADFE7A3C2C52F21C005BF599 /* Apollo in Frameworks */,
+				AD57D6792BA0113D00AB54A7 /* FirebaseFirestore in Frameworks */,
+				AD57D67B2BA0113D00AB54A7 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D6552B9FEA3500AB54A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D65F2B9FEA3500AB54A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD57D63F2B9FEA3400AB54A7 = {
+			isa = PBXGroup;
+			children = (
+				AD57D64A2B9FEA3400AB54A7 /* fourleaffantasy */,
+				AD57D65B2B9FEA3500AB54A7 /* fourleaffantasyTests */,
+				AD57D6652B9FEA3500AB54A7 /* fourleaffantasyUITests */,
+				AD57D6492B9FEA3400AB54A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD57D6492B9FEA3400AB54A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6482B9FEA3400AB54A7 /* fourleaffantasy.app */,
+				AD57D6582B9FEA3500AB54A7 /* fourleaffantasyTests.xctest */,
+				AD57D6622B9FEA3500AB54A7 /* fourleaffantasyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD57D64A2B9FEA3400AB54A7 /* fourleaffantasy */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6D52BA7997C00AB54A7 /* Util */,
+				AD57D6BC2BA013E100AB54A7 /* Core */,
+				AD57D6882BA011F700AB54A7 /* Components */,
+				AD57D6C32BA013E100AB54A7 /* Model */,
+				AD57D67C2BA011DC00AB54A7 /* GoogleService-Info.plist */,
+				AD57D64B2B9FEA3400AB54A7 /* fourleaffantasyApp.swift */,
+				AD57D6A52BA0120C00AB54A7 /* AppTabView.swift */,
+				AD57D6A72BA0121600AB54A7 /* AppScreen.swift */,
+				AD57D64F2B9FEA3500AB54A7 /* Assets.xcassets */,
+				AD57D6512B9FEA3500AB54A7 /* Preview Content */,
+			);
+			path = fourleaffantasy;
+			sourceTree = "<group>";
+		};
+		AD57D6512B9FEA3500AB54A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6522B9FEA3500AB54A7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD57D65B2B9FEA3500AB54A7 /* fourleaffantasyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D65C2B9FEA3500AB54A7 /* fourleaffantasyTests.swift */,
+			);
+			path = fourleaffantasyTests;
+			sourceTree = "<group>";
+		};
+		AD57D6652B9FEA3500AB54A7 /* fourleaffantasyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6662B9FEA3500AB54A7 /* fourleaffantasyUITests.swift */,
+				AD57D6682B9FEA3500AB54A7 /* fourleaffantasyUITestsLaunchTests.swift */,
+			);
+			path = fourleaffantasyUITests;
+			sourceTree = "<group>";
+		};
+		AD57D6882BA011F700AB54A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6832BA011F700AB54A7 /* InputView.swift */,
+				AD57D6842BA011F700AB54A7 /* LeaderboardRowView.swift */,
+				AD57D6852BA011F700AB54A7 /* MatchupsRowView.swift */,
+				AD57D6862BA011F700AB54A7 /* PicksRowView.swift */,
+				AD57D6872BA011F700AB54A7 /* SettingsRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD57D6AB2BA013E100AB54A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6A92BA013E100AB54A7 /* LoginView.swift */,
+				AD57D6AA2BA013E100AB54A7 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD57D6AF2BA013E100AB54A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6AC2BA013E100AB54A7 /* AuthViewModel.swift */,
+				AD57D6AD2BA013E100AB54A7 /* MatchupsViewModel.swift */,
+				AD57D6AE2BA013E100AB54A7 /* SheetView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD57D6B02BA013E100AB54A7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6AB2BA013E100AB54A7 /* View */,
+				AD57D6AF2BA013E100AB54A7 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AD57D6B32BA013E100AB54A7 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6B12BA013E100AB54A7 /* LeaderboardView.swift */,
+				AD57D6B22BA013E100AB54A7 /* PicksView.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		AD57D6B52BA013E100AB54A7 /* Matchups */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6B42BA013E100AB54A7 /* MatchupsView.swift */,
+			);
+			path = Matchups;
+			sourceTree = "<group>";
+		};
+		AD57D6B72BA013E100AB54A7 /* Picks */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6B62BA013E100AB54A7 /* SheetView.swift */,
+			);
+			path = Picks;
+			sourceTree = "<group>";
+		};
+		AD57D6B92BA013E100AB54A7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6B82BA013E100AB54A7 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AD57D6BB2BA013E100AB54A7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6BA2BA013E100AB54A7 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AD57D6BC2BA013E100AB54A7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6B02BA013E100AB54A7 /* Authentication */,
+				AD57D6B32BA013E100AB54A7 /* Leaderboard */,
+				AD57D6B52BA013E100AB54A7 /* Matchups */,
+				AD57D6B72BA013E100AB54A7 /* Picks */,
+				AD57D6B92BA013E100AB54A7 /* Profile */,
+				AD57D6BB2BA013E100AB54A7 /* Root */,
+			);
+			name = Core;
+			path = fourleaffantasy/Core;
+			sourceTree = SOURCE_ROOT;
+		};
+		AD57D6C32BA013E100AB54A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6BD2BA013E100AB54A7 /* Constants.swift */,
+				AD57D6BE2BA013E100AB54A7 /* Item.swift */,
+				AD57D6BF2BA013E100AB54A7 /* Matchups.swift */,
+				AD9BDFF52C8B99C600AC4B9C /* MatchupRow.swift */,
+				AD57D6C02BA013E100AB54A7 /* Picks.swift */,
+				AD57D6C12BA013E100AB54A7 /* Scores.swift */,
+				AD57D6C22BA013E100AB54A7 /* User.swift */,
+			);
+			name = Model;
+			path = fourleaffantasy/Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		AD57D6D52BA7997C00AB54A7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AD57D6D62BA7998A00AB54A7 /* TimeUtils.swift */,
+				AD9BDFF32C8B60A300AC4B9C /* LogoUtils.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD57D6472B9FEA3400AB54A7 /* fourleaffantasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD57D66C2B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasy" */;
+			buildPhases = (
+				AD57D6442B9FEA3400AB54A7 /* Sources */,
+				AD57D6452B9FEA3400AB54A7 /* Frameworks */,
+				AD57D6462B9FEA3400AB54A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fourleaffantasy;
+			packageProductDependencies = (
+				AD57D6762BA0113D00AB54A7 /* FirebaseAuth */,
+				AD57D6782BA0113D00AB54A7 /* FirebaseFirestore */,
+				AD57D67A2BA0113D00AB54A7 /* FirebaseFirestoreSwift */,
+				ADFE7A3B2C52F21C005BF599 /* Apollo */,
+			);
+			productName = fourleaffantasy;
+			productReference = AD57D6482B9FEA3400AB54A7 /* fourleaffantasy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD57D6572B9FEA3500AB54A7 /* fourleaffantasyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD57D66F2B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasyTests" */;
+			buildPhases = (
+				AD57D6542B9FEA3500AB54A7 /* Sources */,
+				AD57D6552B9FEA3500AB54A7 /* Frameworks */,
+				AD57D6562B9FEA3500AB54A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD57D65A2B9FEA3500AB54A7 /* PBXTargetDependency */,
+			);
+			name = fourleaffantasyTests;
+			productName = fourleaffantasyTests;
+			productReference = AD57D6582B9FEA3500AB54A7 /* fourleaffantasyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD57D6612B9FEA3500AB54A7 /* fourleaffantasyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD57D6722B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasyUITests" */;
+			buildPhases = (
+				AD57D65E2B9FEA3500AB54A7 /* Sources */,
+				AD57D65F2B9FEA3500AB54A7 /* Frameworks */,
+				AD57D6602B9FEA3500AB54A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD57D6642B9FEA3500AB54A7 /* PBXTargetDependency */,
+			);
+			name = fourleaffantasyUITests;
+			productName = fourleaffantasyUITests;
+			productReference = AD57D6622B9FEA3500AB54A7 /* fourleaffantasyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD57D6402B9FEA3400AB54A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					AD57D6472B9FEA3400AB54A7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					AD57D6572B9FEA3500AB54A7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = AD57D6472B9FEA3400AB54A7;
+					};
+					AD57D6612B9FEA3500AB54A7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = AD57D6472B9FEA3400AB54A7;
+					};
+				};
+			};
+			buildConfigurationList = AD57D6432B9FEA3400AB54A7 /* Build configuration list for PBXProject "fourleaffantasy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD57D63F2B9FEA3400AB54A7;
+			packageReferences = (
+				AD57D6752BA0113D00AB54A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ADFE7A3A2C52F21C005BF599 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = AD57D6492B9FEA3400AB54A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD57D6472B9FEA3400AB54A7 /* fourleaffantasy */,
+				AD57D6572B9FEA3500AB54A7 /* fourleaffantasyTests */,
+				AD57D6612B9FEA3500AB54A7 /* fourleaffantasyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD57D6462B9FEA3400AB54A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57D6532B9FEA3500AB54A7 /* Preview Assets.xcassets in Resources */,
+				AD57D6502B9FEA3500AB54A7 /* Assets.xcassets in Resources */,
+				AD57D67D2BA011DC00AB54A7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D6562B9FEA3500AB54A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D6602B9FEA3500AB54A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD57D6442B9FEA3400AB54A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57D6A82BA0121600AB54A7 /* AppScreen.swift in Sources */,
+				AD57D69B2BA011F700AB54A7 /* PicksRowView.swift in Sources */,
+				AD57D6982BA011F700AB54A7 /* InputView.swift in Sources */,
+				AD57D6D42BA013E100AB54A7 /* User.swift in Sources */,
+				AD57D6C72BA013E100AB54A7 /* MatchupsViewModel.swift in Sources */,
+				AD9BDFF62C8B99C600AC4B9C /* MatchupRow.swift in Sources */,
+				AD57D6D02BA013E100AB54A7 /* Item.swift in Sources */,
+				AD57D6C42BA013E100AB54A7 /* LoginView.swift in Sources */,
+				AD57D69A2BA011F700AB54A7 /* MatchupsRowView.swift in Sources */,
+				AD57D64C2B9FEA3400AB54A7 /* fourleaffantasyApp.swift in Sources */,
+				AD57D6A62BA0120C00AB54A7 /* AppTabView.swift in Sources */,
+				AD57D6CE2BA013E100AB54A7 /* ContentView.swift in Sources */,
+				AD57D6CA2BA013E100AB54A7 /* PicksView.swift in Sources */,
+				AD57D6C82BA013E100AB54A7 /* SheetView-ViewModel.swift in Sources */,
+				AD57D6CD2BA013E100AB54A7 /* ProfileView.swift in Sources */,
+				AD57D6C62BA013E100AB54A7 /* AuthViewModel.swift in Sources */,
+				AD57D6D22BA013E100AB54A7 /* Picks.swift in Sources */,
+				AD9BDFF42C8B60A300AC4B9C /* LogoUtils.swift in Sources */,
+				AD57D6C92BA013E100AB54A7 /* LeaderboardView.swift in Sources */,
+				AD57D6D12BA013E100AB54A7 /* Matchups.swift in Sources */,
+				AD57D6D72BA7998A00AB54A7 /* TimeUtils.swift in Sources */,
+				AD57D6992BA011F700AB54A7 /* LeaderboardRowView.swift in Sources */,
+				AD57D6CF2BA013E100AB54A7 /* Constants.swift in Sources */,
+				AD57D6CB2BA013E100AB54A7 /* MatchupsView.swift in Sources */,
+				AD57D69C2BA011F700AB54A7 /* SettingsRowView.swift in Sources */,
+				AD57D6C52BA013E100AB54A7 /* RegistrationView.swift in Sources */,
+				AD57D6D32BA013E100AB54A7 /* Scores.swift in Sources */,
+				AD57D6CC2BA013E100AB54A7 /* SheetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D6542B9FEA3500AB54A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57D65D2B9FEA3500AB54A7 /* fourleaffantasyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD57D65E2B9FEA3500AB54A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD57D6672B9FEA3500AB54A7 /* fourleaffantasyUITests.swift in Sources */,
+				AD57D6692B9FEA3500AB54A7 /* fourleaffantasyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD57D65A2B9FEA3500AB54A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD57D6472B9FEA3400AB54A7 /* fourleaffantasy */;
+			targetProxy = AD57D6592B9FEA3500AB54A7 /* PBXContainerItemProxy */;
+		};
+		AD57D6642B9FEA3500AB54A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD57D6472B9FEA3400AB54A7 /* fourleaffantasy */;
+			targetProxy = AD57D6632B9FEA3500AB54A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD57D66A2B9FEA3500AB54A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD57D66B2B9FEA3500AB54A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD57D66D2B9FEA3500AB54A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fourleaffantasy/Preview Content\"";
+				DEVELOPMENT_TEAM = JX224652A5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD57D66E2B9FEA3500AB54A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"fourleaffantasy/Preview Content\"";
+				DEVELOPMENT_TEAM = JX224652A5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD57D6702B9FEA3500AB54A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fourleaffantasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fourleaffantasy";
+			};
+			name = Debug;
+		};
+		AD57D6712B9FEA3500AB54A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fourleaffantasy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fourleaffantasy";
+			};
+			name = Release;
+		};
+		AD57D6732B9FEA3500AB54A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fourleaffantasy;
+			};
+			name = Debug;
+		};
+		AD57D6742B9FEA3500AB54A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX224652A5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cartersteffen.fourleaffantasyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fourleaffantasy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD57D6432B9FEA3400AB54A7 /* Build configuration list for PBXProject "fourleaffantasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57D66A2B9FEA3500AB54A7 /* Debug */,
+				AD57D66B2B9FEA3500AB54A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD57D66C2B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57D66D2B9FEA3500AB54A7 /* Debug */,
+				AD57D66E2B9FEA3500AB54A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD57D66F2B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57D6702B9FEA3500AB54A7 /* Debug */,
+				AD57D6712B9FEA3500AB54A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD57D6722B9FEA3500AB54A7 /* Build configuration list for PBXNativeTarget "fourleaffantasyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD57D6732B9FEA3500AB54A7 /* Debug */,
+				AD57D6742B9FEA3500AB54A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD57D6752BA0113D00AB54A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+		ADFE7A3A2C52F21C005BF599 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD57D6762BA0113D00AB54A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD57D6752BA0113D00AB54A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD57D6782BA0113D00AB54A7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD57D6752BA0113D00AB54A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD57D67A2BA0113D00AB54A7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD57D6752BA0113D00AB54A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		ADFE7A3B2C52F21C005BF599 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFE7A3A2C52F21C005BF599 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD57D6402B9FEA3400AB54A7 /* Project object */;
+}
