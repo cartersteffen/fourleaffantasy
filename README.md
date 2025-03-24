@@ -26,6 +26,7 @@
 - [x] Feature 3
 - [x] Feature 4
 - [x] Feature 5
+- [x] Feature 6
 
 ## Requirements
 
