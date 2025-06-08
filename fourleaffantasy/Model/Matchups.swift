@@ -1,6 +1,6 @@
 //
 //  Odds.swift
-//  genius gamblers
+//  Four Leaf Fantasy
 //
 //  Created by Carter Steffen on 2/26/24.
 //

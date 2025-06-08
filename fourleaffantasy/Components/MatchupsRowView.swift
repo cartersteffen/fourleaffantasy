@@ -7,10 +7,12 @@ struct MatchupsRowView: View {
         VStack {
             Text(matchup.title)
                 .font(.title)
+                .foregroundColor(Color("TextNavy"))
                 .padding(.bottom, 5)
             
             Text(matchup.commenceTime)
                 .font(.subheadline)
+                .foregroundColor(Color("TextNavy").opacity(0.7))
                 .padding(.bottom, 10)
             
             HStack {
@@ -29,46 +31,49 @@ struct MatchupsRowView: View {
                     // Header
                     Text("SPREAD")
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("TextNavy"))
                         .frame(maxWidth: .infinity, maxHeight: 30)
-                        .background(Color.blue)
+                        .background(Color("CardSurface"))
                     
                     // Spread Row
                     HStack(spacing: 0) {
                         Text(matchup.awaySpread)
                             .frame(maxWidth: .infinity, maxHeight: 30)
+                            .foregroundColor(Color("TextNavy"))
                         Text(matchup.homeSpread)
                             .frame(maxWidth: .infinity, maxHeight: 30)
+                            .foregroundColor(Color("TextNavy"))
                     }
                     
                     // Moneyline Header
                     Text("MONEYLINE")
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("TextNavy"))
                         .frame(maxWidth: .infinity, maxHeight: 30)
-                        .background(Color.blue)
+                        .background(Color("CardSurface"))
                     
                     // Moneyline Row
                     HStack(spacing: 0) {
                         Text(matchup.awayMoneyline)
                             .frame(maxWidth: .infinity, maxHeight: 30)
+                            .foregroundColor(Color("TextNavy"))
                         Text(matchup.homeMoneyline)
                             .frame(maxWidth: .infinity, maxHeight: 30)
+                            .foregroundColor(Color("TextNavy"))
                     }
                     
                     // Over/Under Header
                     Text("OVER/UNDER")
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("TextNavy"))
                         .frame(maxWidth: .infinity, maxHeight: 30)
-                        .background(Color.blue)
+                        .background(Color("CardSurface"))
                     
                     // Over/Under Row
                     HStack(spacing: 0) {
-                        Spacer()
                         Text(matchup.overUnder)
                             .frame(maxWidth: .infinity, maxHeight: 30)
-                        Spacer()
+                            .foregroundColor(Color("TextNavy"))
                     }
                 }
                 Spacer()
@@ -86,6 +91,9 @@ struct MatchupsRowView: View {
             }
         }
         .padding()
+        .background(Color("CardSurface"))
+        .cornerRadius(16)
+        .shadow(color: Color("Background").opacity(0.08), radius: 4, x: 0, y: 2)
     }
 }
 

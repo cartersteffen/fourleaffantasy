@@ -1,6 +1,6 @@
 //
 //  LoginView.swift
-//  genius gamblers
+//  Four Leaf Fantasy
 //
 //  Created by Carter Steffen on 2/8/24.
 //
@@ -15,7 +15,7 @@ struct LoginView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                Text("Genius Gamblers")
+                Text("Four Leaf Fantasy")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 // form fields
@@ -24,6 +24,11 @@ struct LoginView: View {
                         .autocapitalization(.none)
                     
                     InputView(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                        .onSubmit {
+                            Task {
+                                try await viewModel.signIn(withEmail: email, password: password)
+                            }
+                        }
                 }
                 .padding(.horizontal)
                 .padding(.top, 12)
@@ -46,6 +51,13 @@ struct LoginView: View {
                 .padding(.top, 24)
                 
                 Spacer()
+                // Show error message if login fails
+                if let errorMessage = viewModel.loginError {
+                    Text(errorMessage)
+                        .foregroundColor(.red)
+                        .font(.caption)
+                        .padding(.horizontal)
+                }
                 // sign up button
                 NavigationLink {
                     RegistrationView()

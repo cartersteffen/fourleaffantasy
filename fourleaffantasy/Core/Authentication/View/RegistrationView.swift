@@ -26,8 +26,9 @@ struct RegistrationView: View {
                     InputView(text: $fullName, title: "Full Name", placeholder: "Enter your name")
                     
                     InputView(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
-                    
+                        .textContentType(nil)
                     InputView(text: $confirmPassword, title: "Confirm Password", placeholder: "Confirm your password", isSecureField: true)
+                        .textContentType(nil)
                 }
                 .padding(.horizontal)
                 .padding(.top, 12)
