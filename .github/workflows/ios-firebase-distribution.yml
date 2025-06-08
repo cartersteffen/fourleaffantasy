@@ -1,0 +1,74 @@
+name: iOS Build and Firebase App Distribution
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-distribute:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest
+
+      - name: Install Firebase CLI
+        run: |
+          curl -sL https://firebase.tools | bash
+
+      - name: Install dependencies (SwiftPM)
+        run: |
+          xcodebuild -resolvePackageDependencies -project fourleaffantasy.xcodeproj
+
+      - name: Generate ExportOptions.plist
+        run: |
+          cat > ExportOptions.plist <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key>
+              <string>ad-hoc</string>
+              <key>signingStyle</key>
+              <string>automatic</string>
+              <key>stripSwiftSymbols</key>
+              <true/>
+              <key>compileBitcode</key>
+              <false/>
+          </dict>
+          </plist>
+          EOF
+
+      - name: Build .ipa for release
+        run: |
+          xcodebuild -workspace fourleaffantasy.xcodeproj/project.xcworkspace \
+            -scheme fourleaffantasy \
+            -sdk iphoneos \
+            -configuration Release \
+            -archivePath ${{ github.workspace }}/build/fourleaffantasy.xcarchive archive
+          xcodebuild -exportArchive \
+            -archivePath ${{ github.workspace }}/build/fourleaffantasy.xcarchive \
+            -exportOptionsPlist ExportOptions.plist \
+            -exportPath ${{ github.workspace }}/build
+
+      - name: Upload to Firebase App Distribution
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          APP_ID: ${{ secrets.APP_ID }}
+          DISTRIBUTION_GROUPS: ${{ secrets.DISTRIBUTION_GROUPS }}
+        run: |
+          firebase appdistribution:distribute ${{ github.workspace }}/build/fourleaffantasy.ipa \
+            --app $APP_ID \
+            --groups "$DISTRIBUTION_GROUPS" \
+            --token $FIREBASE_TOKEN
+
+# Note:
+# - You must provide ExportOptions.plist in the repo or generate it in the workflow.
+# - Set FIREBASE_TOKEN, APP_ID, and DISTRIBUTION_GROUPS as GitHub secrets.
+# - Adjust scheme and workspace/project names as needed.
