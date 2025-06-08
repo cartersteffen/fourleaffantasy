@@ -1,6 +1,6 @@
 //
 //  LeaderboardRowView.swift
-//  genius gamblers
+//  Four Leaf Fantasy
 //
 //  Created by Carter Steffen on 2/8/24.
 //
@@ -20,25 +20,41 @@ struct LeaderboardRowView: View {
         return (wins * 2) + draws
     }
     var earnings: String {
-        var hypothetical = (wins * 100) - (losses * 100) - (draws * 50)
+        let hypothetical = (wins * 100) - (losses * 100) - (draws * 50)
         return "$\(hypothetical)"
     }
     var body: some View {
-        HStack(spacing: 12) {
-            
+        HStack(spacing: 0) {
             Text(player)
                 .font(.subheadline)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TextNavy"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(8)
+                .background(Color("CardSurface"))
+                .cornerRadius(6)
             Text(record)
                 .font(.subheadline)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TextNavy"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(8)
+                .background(Color("CardSurface"))
+                .cornerRadius(6)
             Text(String(points))
                 .font(.subheadline)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TextNavy"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(8)
+                .background(Color("CardSurface"))
+                .cornerRadius(6)
             Text(earnings)
                 .font(.subheadline)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TextNavy"))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(8)
+                .background(Color("CardSurface"))
+                .cornerRadius(6)
         }
+        .background(Color("CardSurface"))
     }
 }
 

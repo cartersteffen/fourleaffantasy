@@ -1,6 +1,6 @@
 //
-//  AppTabview.swift
-//  genius gamblers
+//  AppTabView.swift
+//  Four Leaf Fantasy
 //
 //  Created by Carter Steffen on 2/9/24.
 //

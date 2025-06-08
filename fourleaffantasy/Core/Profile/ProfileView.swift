@@ -45,6 +45,12 @@ struct ProfileView: View {
                         }
                     }
                     Section("Account") {
+                        NavigationLink(destination: UpdateUsernameView().environmentObject(viewModel)) {
+                            SettingsRowView(imageName: "person.crop.circle", title: "Update Username", tintColor: Color(.systemBlue))
+                        }
+                        NavigationLink(destination: UpdatePasswordView().environmentObject(viewModel)) {
+                            SettingsRowView(imageName: "lock.circle", title: "Update Password", tintColor: Color(.systemBlue))
+                        }
                         Button {
                             viewModel.signOut()
                         } label: {

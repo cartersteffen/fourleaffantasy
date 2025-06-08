@@ -1,4 +1,3 @@
-
 [![Swift Version][swift-image]][swift-url]
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
@@ -26,6 +25,7 @@
 - [x] Feature 3
 - [x] Feature 4
 - [x] Feature 5
+- [x] Feature 6
 
 ## Requirements
 
@@ -34,7 +34,7 @@
 
 ## Contribute
 
-We would love you for the contribution to **Genius Gamblers**, check the ``LICENSE`` file for more info.
+We would love you for the contribution to **Four Leaf Fantasy**, check the ``LICENSE`` file for more info.
 
 ## Meta
 

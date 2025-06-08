@@ -88,4 +88,22 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Xcode workspace settings
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad/
+
+# Xcode asset catalog temp files
+*.xcassets/Preview Content/
+
+# Merge conflict and swap files
+*.orig
+*.swp
+*.swo
+
+# Lock files
+*.lock
+
+# macOS system files
 .DS_Store
